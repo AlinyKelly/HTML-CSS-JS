@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum - Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <hr id="estiloHR">
+    <!-- Barra de Menu -->
+    <header id="header_barramenu">
+        <section id="header-logo">
+            <img id="logo" src="img/logo.png" alt="logo">
+        </section>
+
+        <nav id="header-menu">
+            <a href="index.html">Home</a>|
+            <a href="quemsomos.html">Quem Somos</a>|
+            <a href="contato.html" class="botao">Contato</a>
+        </nav>
+    </header>
+
+    <br>
+    <!-- Bloco Formulario -->
+    <section id="sobre">        
+        <h2>Entre em contato</h2>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <br>
+        <hr>        
+
+        <form class="formulario" method="post">
+            <div class="field">
+                <label for="nome">Seu Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+            </div>
+
+            <div class="field">
+                <label for="nome">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" placeholder="Qual o assunto?*" required>
+            </div>
+    
+            <div class="field">
+                <label for="telefone">Seu Telefone:</label>
+                <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone">
+            </div>
+    
+            <div class="field">
+                <label for="email">Seu E-Mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
+            </div>
+            
+            <div class="field">
+                <label for="mensagem">Sua mensagem:</label>
+                <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea>
+            </div>
+    
+            <input type="submit" name="acao" value="Enviar">
+        </form>
+    
+            
+    </section>
+
+    <!-- rodapé do  site -->
+    <footer>
+        <section id="footer-principal">
+            <p><strong>Todos os direitos reservados.</strong></p>
+        </section>
+    </footer>
+
+</body>
+</html>

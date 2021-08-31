@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 93.75%; /*15px*/
+}
+
+body{
+    background: #fcf9f9;
+    font-family: 'Poppins', sans-serif;    
+}
+
+header {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    height: 80px;
+    width: 900px;
+    margin: auto;
+}
+
+header>nav {
+    float: right;
+    font-size: 21px;
+}
+
+header>nav>a {
+    text-decoration: none;
+    color: black;
+    padding: 1px 5px;
+    margin-right: 15px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header>nav>a:hover:after {
+    width: 49.3px;
+    height: 0;
+    border: solid 3px #ffffff;
+}
+
+#header_barramenu {
+    margin-top: 10px;
+    background-color: #fcf9f9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#header_barramenu>section>img {
+    width: 60%;
+}
+
+#header-menu {
+    margin: auto;
+}
+
+#header-menu>a:hover{
+    border-bottom: 2px solid #68999f;
+}
+
+#header-logo {
+    margin: auto;
+}
+
+a:hover {
+    border-bottom: 2px solid #68999f;
+}
+
+#banner{
+    margin: 0 0 60px 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #efecee;
+}
+
+#estiloHR{
+    height:5px;
+    border-width:0;
+    color:#868ba0;
+    background-color:#868ba0;
+}
+
+#sobre{
+    margin: auto;
+    width: 900px;
+    margin: auto;
+}
+
+/*CSS FORMULARIO*/
+.formulario{
+    margin: 25px auto 25px 5;
+    width: 50%;
+    padding: 10px;
+    border:1px solid transparent;
+}
+
+.field{
+    width: 100%;
+    margin: 15px 0;
+}
+
+.field label, 
+.field span{
+    padding-left: 10px;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #2C2E30;
+    
+    display: block;
+    width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea{
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input#nao{
+    margin-left: 30px;
+}
+
+textarea{
+    line-height: 20px;
+    padding: 10px;
+    height: 90px;
+    resize: none;
+}
+
+input[type=submit]{
+    display: block;   
+    border: none;
+    outline: 0;
+    cursor: pointer;    
+    margin: 0 auto;
+    background-color: #68999f;
+    border-radius: 5px;
+    width: 100px;
+    height: 57px;
+    color: #ffffff;    
+    font: normal normal 20px/57px "Arial", sans-serif;
+    text-align: center;
+}
+/*FIM DO CSS FORMULARIO*/
+
+
+footer {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: center;
+
+    line-height: 1.21;
+    letter-spacing: normal;
+    color: black;
+
+    display: flex;
+    align-items: center;    
+    height: 100px;
+    width: 100%;    
+    background-color: #fcf9f9;
+    justify-content: center;
+}
+
+footer>section>a{
+    color: #54565A;
+}
