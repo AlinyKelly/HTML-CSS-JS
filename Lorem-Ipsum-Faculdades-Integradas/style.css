@@ -68,10 +68,6 @@ header>nav>a:hover:after {
     margin: auto;
 }
 
-a:hover {
-    border-bottom: 2px solid #68999f;
-}
-
 #banner{
     margin: 0 0 60px 0;
     justify-content: center;
