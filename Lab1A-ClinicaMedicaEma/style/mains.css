@@ -1,0 +1,328 @@
+:root{ /*Criação de variaveis*/
+    --vermelho: #c53232;
+    --branco: #ffffff;
+}
+
+*{ /*Resete do CSS*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos Base*/
+body{
+    background: var(--branco);
+    font-family: 'Arial', Times, serif;
+    color: #c53232;
+}
+
+header .containerHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(230, 225, 225);
+}
+
+header .logo{
+    margin-left: 25px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #c53232;
+    margin-right: 30px;
+}
+
+header nav a:hover{
+    color: rgb(250, 56, 56)
+}
+
+.imagensContato{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 100px;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.imagensContato img{    
+    padding-left: 50px;
+}
+
+
+/*Principal*/
+.principal{
+    font-size: 16px;
+    background: var(--vermelho);
+    color: #ffffff;
+    line-height: 2.2em;
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.principal .descricaoPrincipal{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.principal .tituloPrincipal{
+    margin-top: 2%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.containerPrincipal{
+    margin-left: 50px;
+}
+
+.principal .containerPrincipal{
+    width: 70%;
+}
+
+table {
+    margin-left: 50px;
+    width: 60%;
+}
+
+/* Sobre */
+.sobre{
+    font-size: 16px;
+    color: rgba(185,54,50);
+    background-image: url('../img/quemsomos.jpg');
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sobre .descricao{
+    margin-top: 10px;
+    margin-bottom: 200px;
+}
+
+.sobre .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.sobre .container{
+    width: 100%;
+}
+
+#tabelafooter{ 
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 100%;
+    color: #ffffff; 
+    padding-top: 50px;
+    text-align: left;
+    
+}
+
+footer{
+    background-color: rgba(185,54,50);
+    color: azure;
+    text-align: center;
+}
+
+#redessociais{
+    background-color: #8a2222;
+    height: 80px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#redessociais p{
+    margin-top: 30px;
+}
+
+.icons{
+    color:#ffffff;
+    padding-right: 10px;
+}
+
+/* Pagina Marcação de consultas */
+
+.principalMarcacao .descricaoMarcacao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.principalMarcacao .tituloMarcacao{
+    margin-top: 2%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.containerMarcacao{
+    margin-left: 50px;
+}
+
+.principalMarcacao .containerMarcacao{
+    width: 70%;
+}
+
+
+/*CSS FORMULARIO*/
+#formMarcacao{
+    margin: 25px auto 25px auto;
+    width: 50%;
+    padding: 30px;
+    border:1px solid transparent;
+}
+
+#formMarcacao h1{
+    width: 100%;
+    text-align: center;
+    font-family: 'Trebuchet MS', Arial, sans-serif;;
+    font-size: 34px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #2C2E30;
+}
+
+#formMarcacao h2{
+    width: 100%;
+    text-align: left;
+    font-family: 'Trebuchet MS', Arial, sans-serif;;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #2C2E30;
+}
+
+#formMarcacao  p{
+    width: 100%;
+    text-align: left;
+    font-family: 'Trebuchet MS', Arial, sans-serif;;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #ca3f3f;
+}
+
+.field{
+    width: 100%;
+    margin: 15px 0;
+}
+.field label, 
+.field span{
+    padding-left: 10px;
+    text-align: justify;
+    font-family: 'Trebuchet MS', Arial, sans-serif;;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #2C2E30;
+    
+    display: block;
+    width: 100%;
+}
+.radiobox label{
+    width: auto;
+    display: inline-block;
+}
+input[type=text],
+input[type=email],
+textarea{
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input[type=date],
+select{
+    width: 30%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+
+input#nao{
+    margin-left: 30px;
+}
+textarea{
+    line-height: 20px;
+    padding: 10px;
+    height: 90px;
+    resize: none;
+}
+input[type=submit]{
+    display: block;   
+    border: none;
+    outline: 0;
+    cursor: pointer;    
+    margin: 0 auto;
+    background-color: #ca3f3f;
+    border-radius: 5px;
+    width: 210px;
+    height: 57px;
+    color: #ffffff;    
+    font: normal normal 20px/57px, sans-serif;
+    text-align: center;
+}
+/*FIM DO CSS FORMULARIO*/

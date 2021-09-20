@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/mains.css">
+
+    <!--RESPONSIVIDADE-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <title>Clínica Médica Ema</title>
+</head>
+
+<body>
+    <header>
+        <div class="containerHeader">
+            <h2 class="logo">Clínica Médica Ema</h2>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="marcacao.html">Marcação de Consultas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="imagensContato">
+            <img src="img/telefone-1.png" alt="Contato DDD 00 Fone 33331234">
+            <img src="img/whatsapp-link.png" alt="Whatsapp DDD 00 Fone 912345678">
+        </div>
+
+        <!-- Formulario -->
+        <form method="POST" id="formMarcacao" action="mailto:">
+            <h3 class="tituloMarcacao">Bem-vind@ a marcação de consultas</h3>
+            <p class="descricaoMarcacao">Agende sua consulta, com tranquilidade e sem sair de casa.</p>
+            <div class="field">
+                <label for="nome">Seu Nome: *</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+            </div>
+
+            <div class="field">
+                <label for="telefone">Seu Telefone: *</label>
+                <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone*">
+            </div>
+
+            <div class="field">
+                <label for="email">Seu E-Mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu E-Mail">
+            </div>
+
+            <div class="field">
+                <label class="menu-escolha" for="especialidades">Escolha a especialidade: * </label>
+                <select id="especialidades" name="especialidades" onchange="funcaoChange(this)" required>
+                    <option value="1">Cardiologia</option>
+                    <option value="2">Clinica Geral</option>
+                    <option value="3">Dermatologia</option>
+                    <option value="4">Gastro</option>
+                    <option value="5">Ginecologia</option>
+                    <option value="6">Odontologia</option>
+                    <option value="7">Oftamologia</option>
+                    <option value="8">Pediatria</option>
+                    <option value="9">Ultrassom</option>
+                </select>
+            </div>
+
+            <div id="preco">
+                <p id="resultado" onclick="redirecionar()"></p>
+            </div>
+
+            <div class="field">
+                <label for="data">Data para consulta: *</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+
+            <div class="field">
+                <label for="mensagem">Sua mensagem:</label>
+                <textarea name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
+            </div>
+
+            <div class="field">
+                <button class="botao" type="submit" name="submit" onclick="clicou()">CONFIRMAR</button>
+            </div>
+            </p>
+
+            <p id="agradecimento"></p>
+
+        </form>
+        <!-- Fim do formulario -->
+
+
+        <footer>
+            <table id="tabelafooter">
+                <tr>
+                    <th>Horário de Atendimento</th>
+                    <th>Localização</th>
+                    <th>Contato</th>
+                </tr>
+                <tr>
+                    <td>Segunda a Sexta: 07:00 - 21:00</td>
+                    <td>Av. da Saudade, 1234</td>
+                    <td>contato@clinicamedicaema.com.br</td>
+                </tr>
+                <tr>
+                    <td>Sabado: 07:00 - 18:00</td>
+                    <td>Bairro: Para sempre</td>
+                    <td>Whatsapp: (00) 91234-5678</td>
+                </tr>
+                <tr>
+                    <td>Domingo: 07:00 - 12:00</td>
+                    <td>Cidade do Futuro, País Utopia</td>
+                    <td>Telefone: (00) 3333-1234</td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+
+            <div id="redessociais">
+                <p> Repositório do site:
+                    <a class="icons" href="https://github.com/AlinyKelly/Av1ClinicaMedicaEma" target="_blank"><i
+                            class='fab fa-github' style='font-size:28px'></i></a>
+                    | Me siga nas redes sociais:
+                    <a class="icons" href="https://www.linkedin.com/in/alinykelly/" target="_blank"><i
+                            class='fab fa-linkedin' style='font-size:28px'></i></a>
+                    <a class="icons" href="https://www.instagram.com/alinykellyfs/" target="_blank"><i
+                            class='fab fa-instagram' style='font-size:28px'></i></a>
+                    <a class="icons" href="https://twitter.com/alinykellyfs" target="_blank"><i class='fab fa-twitter'
+                            style='font-size:28px'></i></a>
+                    <a class="icons" href="https://www.youtube.com/channel/UC3elbSJ6anMa54jSInSXa0w" target="_blank"><i
+                            class='fab fa-youtube' style='font-size:28px'></i></a>
+                    <a class="icons" href="https://www.hackerrank.com/alinykellyfs" target="_blank"><i
+                            class='fab fa-hackerrank' style='font-size:28px'></i></a>
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <!--SCRIPT-->
+    <script src="https://kit.fontawesome.com/7edf7ef1da.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
