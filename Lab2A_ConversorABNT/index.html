@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Conversor ABNT</title>
+    <script type="text/javascript">
+     
+        function inverter(){
+            var inverter = document.getElementsByName("nomeAutor");
+            valor = inverter.item(0).value.toString().split(" ");
+            sobrenome = valor.reverse().join(" ").split(" ",1);
+            primeironome = inverter.item(0).value.toString().split(" ",1);
+            
+            reverter = valor.reverse().join(" ").split(" ");
+           // abrevia = valor[0];
+
+            document.body.innerHTML += valor + "<br />";
+            document.body.innerHTML += sobrenome + "<br />";
+            document.body.innerHTML += primeironome + "<br />";
+            document.body.innerHTML += reverter;
+        }
+    
+        
+    </script>
+</head>
+<body>
+<h1>Conversor ABNT</h1>
+<form>
+<input type="text" name="nomeAutor" value="" />
+<input type="button" id="btn" value="Inverter" onclick="inverter()" />
+</form>
+</body>
+</html>
